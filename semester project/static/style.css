@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #007300;
+}
+
+/* Navigation Links */
+header nav li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 1rem;
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    /* display: block; Makes the entire area clickable */
+}
+
+header nav li a:hover {
+    color: #ffffff;
+    background-color: #007300;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('static/images/AzuraBites2.png') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 0, 0.8), rgba(255, 255, 255, 0.2));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-buttons button {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    /* cursor: pointer; */
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons button a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-buttons button:hover {
+    background: #333333;
+}
+
+/* Styling for .first section */
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.first_h2 {
+    color: #a0522d;
+    /* Brownish color for the heading */
+    font-size: 32px;
+    /* margin-bottom: 16px; */
+}
+
+.first_para {
+    color: #333;
+    font-size: 16px;
+    max-width: 50%;
+    line-height: 1.8;
+}
+
+.intro_botton {
+    margin-top: 16px;
+    background-color: #a0522d;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    /* cursor: pointer; */
+
+}
+
+.intro_botton a {
+    text-decoration: none;
+    color: white;
+}
+
+.intro_botton:hover {
+    background-color: #8b4513;
+    /* Darker shade on hover */
+}
+
+img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+}
+
+/* second body */
+
+.second {
+    display: flex;
+    flex-direction: row-reverse;
+    /* This reverses the order of the child elements */
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 3px; */
+    background-color: #fff;
+}
+
+.second_h2 {
+    color: #a0522d;
+    /* Brownish color for the heading */
+    font-size: 2rem;
+    /* margin-bottom: 1rem; */
+}
+
+.second_para {
+    color: #333;
+    font-size: 16px;
+    max-width: 50%;
+    line-height: 1.8;
+    text-align: left;
+    margin-left: 350px;
+}
+
+.second_botton {
+    margin-top: 16px;
+    background-color: #a0522d;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.second_botton a {
+    text-decoration: none;
+    color: white;
+}
+
+.second_botton:hover {
+    background-color: #8b4513;
+    /* Darker shade on hover */
+}
+
+.pic img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.insta {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+}
+
+/* Styling the container */
+.contact .box {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Form styles */
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Textarea specific styling */
+.contact textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact button {
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+
+
+}
+
+/* Button hover effect */
+.contact button:hover {
+    background: #218838;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 5px 0;
+}

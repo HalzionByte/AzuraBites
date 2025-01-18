@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | AZ</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>WELCOME to AzuraBites</h1>
+            <li>
+                <a href="{{ 'home'}}">Home</a>
+                <a href="{{'about'}}">About</a>
+                <a href="{{'ingredients'}}">Ingridients</a>
+                <a href="{{'membership'}}">Memberships</a>
+                <a href="{{'login'}}">Login</a>
+                <a href="{{ 'logout' }}">Logout</a>
+                <a href="{{'orders'}}">past orders</a>
+                <a href="{{'checkout'}}">checkout</a>
+            </li>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p>Keto Diet in Pakistan</p>
+            <h2>Keto Diet Healthy Fresh & Organic</h2>
+            <div class="hero-buttons">
+                <button><a href="{{'register'}}">Register Now →</a></button>
+                <button><a href="{{'membership'}}">Diet Plans →</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="first">
+        <h2 class="first_h2">Introduction</h2>
+        <div class="pic">
+            <img src="static/images/WhatsApp Image 2024-12-27 at 8.07.10 PM.jpeg" alt="no">
+        </div>
+
+        <div>
+            <p class="first_para">Have you been having trouble preparing lunch for yourself or family? And there just
+                doesn't seem to be enough
+                time to prepare it?<br>Well we have the solution for <strong>you</strong>. Join our monthly subscription
+                for lunch, we provide you
+                with your preferred meals that are healthy.<br>You get charged monthly like you would with a Netflix
+                subscription<br>We have a variety of plans for you.
+                <button class="intro_botton"><a href="{{'membership'}}">Learn more</a></button>
+        </div>
+
+    </section>
+
+    <section class="second">
+        <h2 class="second_h2">Benefits of Our Subscription</h2>
+        <div class="pic">
+            <img src="static/images/WhatsApp Image 2024-12-27 at 8.07.09 PM.jpeg" alt="no">
+        </div>
+        <ol class="second_para">
+            <li>You don't have to worry about preparing lunch every day</p>
+            <li>You would save money with our subscription monthly</p>
+            <li>We offer you a variety of dishes to choose from</p>
+            <li>The dishes undergo quality control</p>
+            <li>Healthy food provided</p>
+            <li>Food cooked in a clean environment</p>
+                <button class="second_botton"><a href="{{'register'}}">Join Now</a></button>
+        </ol>
+    </section>
+
+
+
+    <section class="content contact">
+        <div class="box">
+            <h2>Leave a Reply</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Your Website. All rights reserved.</p>
+            <p>Contact: Business@example.com</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
